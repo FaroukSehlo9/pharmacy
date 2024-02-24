@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = pharmacy
+build_property.RootNamespace = pharmacy
+build_property.ProjectDir = F:\programing\project_iti\pharmacy\pharmacy\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\programing\project_iti\pharmacy\pharmacy
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/comment/add_comment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29tbWVudFxhZGRfY29tbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/comment/sh_comment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29tbWVudFxzaF9jb21tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/medicine/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWVkaWNpbmVcY3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/medicine/displaymed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWVkaWNpbmVcZGlzcGxheW1lZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/medicine/display_my_med.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWVkaWNpbmVcZGlzcGxheV9teV9tZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/medicine/editmed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWVkaWNpbmVcZWRpdG1lZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/medicine/home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWVkaWNpbmVcaG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/medicine/med_in_cat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWVkaWNpbmVcbWVkX2luX2NhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/user/editphoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxlZGl0cGhvdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/user/editProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxlZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/user/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxwcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/user/sign_in.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxzaWduX2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/user/sign_up.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxzaWduX3VwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/_layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX2xheW91dDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/programing/project_iti/pharmacy/pharmacy/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tbd9bskbvw

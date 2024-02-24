@@ -1,0 +1,61 @@
+﻿@model List<medicine>
+
+@{
+    ViewData["Title"] = "displaymed";
+    Layout = "~/Views/_layout2.cshtml";
+}
+
+
+<div style="background-color:cadetblue;display: flex;flex-direction: column;
+                align-items: center;padding-top: 38px;">
+    
+
+@foreach (medicine m in Model)
+{
+   
+    <div class="col col-md-9 col-lg-7 col-xl-5" style="margin-top: 10px;margin-bottom: 10px;width: 75%;">
+        <div class="card" style="border-radius: 15px;background-color: darkgrey;">
+          <div class="card-body p-4">
+            <div class="d-flex text-black">
+                <div class="flex-shrink-0">
+                <img src="@m.user.img"
+                          class="img-fluid my-5" style="width: 100px;height: 100px;
+                             border-radius: 50%;" />
+              <h4>@m.user.name</h4>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                 <div style="margin-bottom: 30px;display: flex;
+                             flex-direction: row;justify-content: space-between;">
+                  <div>
+                <h2 class="mb-1" style="margin-left: 25%;color:  #a11b1b;">  @m.med_name </h2>
+                <h4>Price = @m.med_money $</h4>
+                <h4>Quantity = @m.med_quantity $</h4>
+                <h4>Expiry Dare = @m.med_expiredate $</h4>
+                </div>
+                <div>
+                <img src="@m.med_img" style="width:150px;height:100px;">
+                </div>
+                </div>
+                <div class="d-flex justify-content-start rounded-3 p-2 mb-2" style="background-color: #efefef;">
+                  <div>
+                      <p>@m.med_desc</p>
+                  </div>
+                </div>
+
+                <div class="d-flex pt-1">
+                    <a asp-controller="comment" asp-action="sh_comment" asp-route-id="@m.med_id" class="btn btn-dark flex-grow-1" 
+                                style="margin-right: 20px;">show comments </a>
+                    <a asp-controller="comment" asp-action="add_comment" asp-route-id="@m.med_id" class="btn btn-dark flex-grow-1">Add comments </a>
+                           
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="color: black;margin-left: 40%;">@m.med_time</p>
+        </div>
+      </div>
+      
+
+
+    }
+</div>

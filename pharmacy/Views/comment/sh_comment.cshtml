@@ -1,0 +1,43 @@
+﻿@model List<comment>
+
+
+
+@{
+    ViewData["Title"] = "sh_comment";
+    Layout = "~/Views/_layout2.cshtml";
+}
+<div style="background-color: #ad655f;">
+  <div class="container my-5 py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 col-lg-10">
+        <div class="card text-dark">
+          
+@foreach (comment c in Model)
+{
+    
+          <div class="card-body p-4" style="border-color: inherit;border-style: solid;">
+            <div class="d-flex flex-start">
+              <img class="rounded-circle shadow-1-strong me-3"
+                src="@c.user.img" alt="avatar" width="60"
+                height="60" />
+              <div>
+                <h6 class="fw-bold mb-1">@c.user.name</h6>
+                <div class="d-flex align-items-center mb-3">
+                  <p class="mb-0">@c.time </p>
+                  <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>
+                  <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                  <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                </div>
+                <p class="mb-0"> @c.com_desc</p>
+              </div>
+            </div>
+          </div>
+
+      
+}
+            
+         </div>
+      </div>
+    </div>
+  </div>
+</div>

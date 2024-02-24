@@ -1,0 +1,75 @@
+body
+{
+    background-image: url(~/content/photo/bg4.png);
+    color: bisque;
+}
+.profile
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.child_pro
+{
+    width: 70%;
+}
+.img_name
+{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    .img_name h1 {
+        color: bisque;
+        margin-left: 10%;
+        font-size: 45px;
+    }
+
+.pro_img
+{
+    width: 100px;
+    height: 100px;
+    background-image: url(photo/bg1.jpg);
+    border-radius: 50%;
+}
+
+.btn_edit_image {
+    border-radius: 20px;
+    border: 1px solid bisque;
+    background-color: #256177;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 8px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 15%;
+    margin-left: -7%;
+}
+
+.pro_inf {
+    color: bisque;
+    margin-left: 14%;
+    margin-top: 10%;
+    font-size: 35px;
+}
+
+
+.pro_inf span {
+    color: cadetblue;
+}
+
+
+.btn_edit {
+    border-radius: 20px;
+    border: 1px solid bisque;
+    background-color: #256177;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-left: 40%;
+}

@@ -1,0 +1,54 @@
+﻿@model user
+@{
+    ViewData["Title"] = "sign_in";
+    Layout = "~/Views/_layout2.cshtml";
+}
+
+
+@section Css{
+
+    <link rel="stylesheet" href="~/content/sign_in.css" />
+}
+
+<div class="father_sign_in">
+    <div class="child_sign_in">
+
+
+        <div class="sign_in">
+            <form method="post" class="f_sign_in">
+                <h1>Sign in</h1>
+                <input class="in_sign_in" asp-for=email  placeholder="Email">
+                <span asp-validation-for="email" class="text-danger"></span>
+
+
+                    <input class="in_sign_in" asp-for=password type="password" placeholder="Password">
+                    <span asp-validation-for="password" class="text-danger"></span>
+
+
+                <input type="submit" value="Sign In" class="btn_sign_in">
+                    <p class="text-danger">@ViewBag.status </p>
+
+            </form>
+        </div>
+
+
+        <div class="sign_up">
+            <h1>Hello, Friend!</h1>
+            <p>You don't have account yet? Don't worry! You still can join us</p>
+            <a asp-controller="user" asp-action="sign_up">
+            <input type="submit" value="Sign Up" class="btn_sign_up">
+            </a>
+
+        </div>
+
+    </div>
+    
+</div>
+
+
+    @section Scripts{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+}

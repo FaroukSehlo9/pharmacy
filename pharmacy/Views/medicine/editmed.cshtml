@@ -1,0 +1,91 @@
+﻿@model medicine
+
+@{
+    ViewData["Title"] = "editmed";
+    Layout = "~/Views/_layout2.cshtml";
+}
+
+
+<div class="edit medicin"
+     style="    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;">
+
+    <br><br>
+    <h2>Edit Medicin</h2>
+    <form method="post"
+          enctype="multipart/form-data"
+          style="    width: 1064px;
+        font-family: cursive;
+        border: 3px solid lightsteelblue;
+        margin: 10px auto;
+        padding: 20px;">
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="name">Medicine Name</label>
+            <input asp-for=med_name class="form-control" placeholder="Enter Name" />
+            <span asp-validation-for="med_name" class="text-danger"></span>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="med_desc">Description</label>
+            <textarea asp-for=med_desc class="form-control" placeholder="Enter Description"></textarea>
+            <span asp-validation-for="med_desc" class="text-danger"></span>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="med_money">Price</label>
+            <input asp-for=med_money class="form-control" placeholder="Enter Price" />
+            <span asp-validation-for="med_money" class="text-danger"></span>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="med_quantity">Quantity</label>
+            <input asp-for=med_quantity class="form-control" placeholder="Enter Quantity" />
+            <span asp-validation-for="med_quantity" class="text-danger"></span>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="med_expiredate">Expiry Date</label>
+            <input type="date" asp-for=med_expiredate class="form-control" placeholder="Enter Expire Date" />
+            <span asp-validation-for="med_expiredate" class="text-danger"></span>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="med_img"> Add Medicin Photo</label>
+            <input type="file" name="img" class="form-control" value="Choose imgae" asp-for="med_img" style="background-color: darkgrey;">
+            <span asp-validation-for="med_img" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="cat_id">Choode Catalog</label>
+            <select asp-for="cat_id" asp-items="@ViewBag.cat" class="form-control"></select>
+            <span asp-validation-for="cat_id" class="text-danger"></span>
+        </div>
+        <br>
+
+        <br /><br /><br />
+        <input type="submit" value="ُEdit" class="btn btn-dark">
+        <br /><br /><br />
+
+
+    </form>
+    <br /><br /><br />
+</div>
+
+@section Scripts{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+}
+
+

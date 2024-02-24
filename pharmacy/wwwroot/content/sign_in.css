@@ -1,0 +1,112 @@
+.father_sign_in
+{
+    background-image: url(photo/bg1.jpg);
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.child_sign_in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_in
+    {
+    background-color: whitesmoke;  
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 25%;   
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.f_sign_in
+{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+.father_sign_in h1
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1em;
+    font-size: 38px;
+}
+
+.father_sign_in  p
+{
+    margin-right: 10px;
+    margin-left: 24px;
+    color: #444;
+}
+
+.in_sign_in
+{
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.btn_sign_in
+{
+    width: auto;
+    padding: 6px 12px;
+    background-color:#5bc0de;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    border-color: #269abc;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sign_up
+    {
+
+    background-color: #269abc;  
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 25%;   
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .sign_up input
+    {
+        
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    background-color: #33b5e5;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    }

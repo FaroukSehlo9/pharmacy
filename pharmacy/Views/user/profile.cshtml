@@ -1,0 +1,66 @@
+﻿@model user
+
+@{
+    ViewData["Title"] = "profile";
+    Layout = "~/Views/_layout2.cshtml";
+}
+
+
+
+<dev class="vh-100" style="background-color: #0e172a;max-height:50%">
+  <div class="container py-5 h-100">
+        <div class="card mb-3" style="border-radius: .5rem;margin-bottom: 10rem !important;    margin-top: 15%;">
+            <div class="row g-0" style="margin-bottom: 10rem !important;">
+            <div class="col-md-4 gradient-custom text-center text-dark"
+              style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+              <img src="@Model.img"
+                         alt="Avatar" class="img-fluid my-5" style="width: 100px;height: 100px;
+                            background-image: url(photo/bg1.jpg); border-radius: 50%;" />
+              <a asp-controller="user" asp-action="editphoto" asp-route-id="@Model.id"
+                    class="btn btn-dark flex-grow-1">Edit photo </a>
+              <h4>@Model.name</h4>
+              <i class="far fa-edit mb-5"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h6>Information</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Email</h6>
+                    <p class="text-muted">@Model.email</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Phone</h6>
+                    <p class="text-muted">@Model.phone</p>
+                  </div>
+                </div>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-4 mb-3">
+                    <h6>Adderss</h6>
+                    <p class="text-muted">@Model.adderss</p>
+                  </div>
+                  <div class="col-4 mb-3">
+                    <h6>Birthdate</h6>
+                    <p class="text-muted">@Model.birthdate</p>
+                  </div>
+                  <div class="col-4 mb-3">
+                    <h6>Tybe</h6>
+                    <p class="text-muted">@Model.sex</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start">
+                  <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                  <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
+                  <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+                
+                <a asp-controller="user" asp-action="editProfile" asp-route-id="@Model.id"
+                   class="btn btn-dark flex-grow-1">Edit Profile </a>
+        </div>
+      </div>
+    </div>
+</dev>

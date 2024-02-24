@@ -1,0 +1,101 @@
+﻿@model user
+
+@{
+    ViewData["Title"] = "editProfile";
+    Layout = "~/Views/_layout2.cshtml";
+}
+
+
+<div class="edit">
+    <br />
+    <h1>Edit Profile</h1>
+    <br />
+
+
+    <form method="post" enctype="multipart/form-data">
+        <div hidden>
+        <input  name="img" value="@Model.img" class=" btn btn-dark" asp-for="img">
+            <span asp-validation-for="img" class="text-danger"></span>
+        </div>
+        <br /><br />
+
+        <div class="form-group">
+            <label for="name">User Name</label>
+            <input asp-for=name class="form-control" placeholder="Enter Name" />
+            <span asp-validation-for="name" class="text-danger"></span>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input asp-for=email class="form-control" placeholder="Enter Email" />
+            <span asp-validation-for="email" class="text-danger"></span>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" asp-for=password class="form-control" placeholder="Enter Password" />
+            <span asp-validation-for="password" class="text-danger"></span>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" asp-for=confirm_password class="form-control" placeholder="Enter Confirm Password" />
+            <span asp-validation-for="confirm_password" class="text-danger"></span>
+        </div>
+        <br />
+
+
+        <div class="form-group">
+            <label for="address"> Address</label>
+            <input asp-for=adderss class="form-control" placeholder="Enter Address" />
+            <span asp-validation-for="confirm_password" class="text-danger"></span>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="phone"> Phone</label>
+            <input asp-for=phone class="form-control" placeholder="Enter Phone" />
+            <span asp-validation-for="phone" class="text-danger"></span>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="birthdate"> Birth Date</label>
+            <input type="date" asp-for=birthdate class="form-control" placeholder="Enter  Birth Date" />
+            <span asp-validation-for="birthdate" class="text-danger"></span>
+        </div>
+        <br />
+
+
+        <div class="form-group">
+            <label for="sex"> Tybe :    </label>
+            <input asp-for=sex class="form-control" placeholder="Enter  Tybe" />
+            <span asp-validation-for="sex" class="text-danger"></span>
+        </div>
+        <br />
+
+
+
+
+
+
+
+
+        <input type="submit" value="register" class="btn btn-dark" />
+        <br />
+        <br />
+
+    </form>
+</div>
+
+
+
+@section Scripts{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+}

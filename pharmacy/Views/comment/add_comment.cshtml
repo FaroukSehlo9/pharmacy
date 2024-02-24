@@ -1,0 +1,45 @@
+﻿@model comment
+
+@{
+    ViewData["Title"] = "add_comment";
+    Layout = "~/Views/_layout2.cshtml";
+}
+
+
+
+<div class="add comment"
+     style="    background-color: cadetblue;
+    padding: 25% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;">
+
+    <br><br>
+    <h2>Add  Comment</h2>
+    <form method="post"
+          style="    width: 1064px;
+        font-family: cursive;
+        border: 3px solid lightsteelblue;
+        margin: 10px auto;
+        padding: 20px;">
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="com_des">comment</label>
+            <input asp-for=com_desc class="form-control" placeholder="Your Comment" />
+            <span asp-validation-for="com_desc" class="text-danger"></span>
+        </div>
+        <br>
+
+        <input type="submit" value="Add" class="btn btn-dark">
+    </form>
+    <br /><br /><br />
+</div>
+
+@section Scripts{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+}
